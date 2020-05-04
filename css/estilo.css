@@ -61,6 +61,13 @@ body{
     color: white;
     border-radius: 10px;
     box-shadow: 0px 10px 0px rgba(0,0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.price p:hover {
+
+    box-shadow: -10px 10px 0px rgba(0,0, 0, 0.2);
+    padding: 22px 0;
 }
 
 .box {
@@ -81,6 +88,41 @@ body{
     font-weight: 800;
     color: var(--dark-blue);
 
+}
+
+.div-input {
+    position: relative;
+}
+
+.div-input img{
+    visibility: hidden;
+    position: absolute;
+    right: 3%;
+    top: calc(50% - 12px);
+}
+
+.div-input small {
+    color: var(--red);
+    text-align: right;
+    display: block;
+    font-weight: 600;
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Com classe error */
+.div-input.error img {
+    visibility: visible;
+}
+
+.div-input.error input{
+    border: 2px var(--red) solid;
+    color: var(--red);
+}
+
+.div-input.error input::placeholder {
+    color: var(--red);
 }
 
 .box input::placeholder {
