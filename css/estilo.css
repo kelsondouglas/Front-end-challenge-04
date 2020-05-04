@@ -84,10 +84,13 @@ body{
     margin-bottom: 10px;
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--gray-blue);
     font-weight: 800;
     color: var(--dark-blue);
+}
 
+.box input:focus-within {
+    border: 1px solid var(--dark-blue);
 }
 
 .div-input {
